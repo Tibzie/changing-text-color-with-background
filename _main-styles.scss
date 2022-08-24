@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.doc-title {
+    font-size: 10rem;
+    @media (max-width: 767px) {
+        font-size: 5rem;
+    }
+    font-weight: bold;
+    @include tracking(10);
+    background: url('./img/blueorange.jpg');
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text 2s alternate-reverse infinite;
+    &__container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes text {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}

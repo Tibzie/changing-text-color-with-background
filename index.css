@@ -1,0 +1,58 @@
+/* Convert Illustrator, InDesign and Photoshop tracking into letter spacing.
+-------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.doc-title {
+  font-size: 10rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  background: url("./img/blueorange.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text 2s alternate-reverse infinite;
+}
+
+@media (max-width: 767px) {
+  .doc-title {
+    font-size: 5rem;
+  }
+}
+
+.doc-title__container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes text {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes text {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

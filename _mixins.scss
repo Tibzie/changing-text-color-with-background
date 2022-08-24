@@ -1,0 +1,11 @@
+/* Convert Illustrator, InDesign and Photoshop tracking into letter spacing.
+-------------------------*/
+
+// associated function with the mixin
+@function tracking( $target ){
+    @return ($target / 1000) * 1em;
+}
+
+@mixin tracking( $target ){
+    letter-spacing: tracking( $target );
+}
